@@ -46,6 +46,7 @@ while (remainingLetters > 0 && guessNumber > 0) {
             if (word[j] === guess && answerArray[j] === "_") {
                 answerArray[j] = guess;
                 remainingLetters--;
+                guessNumber++;
                 console.log("Remaining letters = " + remainingLetters);
             }
         }
